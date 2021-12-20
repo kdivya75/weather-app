@@ -1,0 +1,42 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #5D1049;
+  color: #fff;
+  padding: 0.5em;
+  gap: 1em;
+}
+
+header h1 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+header img {
+  height: 50px;
+}
+
+.searchContainer {
+  margin-left: auto;
+}
+
+.searchContainer input {
+  padding: 0.6em;
+  border-radius: 0.2em;
+  border: 1px solid #646464;
+  margin-right: 1em;
+}
+
+.searchContainer button {
+  padding: 0.6em 2em;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 0.2em;
+  color: #fff;
+  font-size: 0.9em;
+}
+/*# sourceMappingURL=Header.css.map */

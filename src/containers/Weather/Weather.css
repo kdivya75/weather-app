@@ -1,0 +1,8 @@
+.weatherContainer {
+  margin-top: 2em;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  gap: 2em;
+}
+/*# sourceMappingURL=Weather.css.map */

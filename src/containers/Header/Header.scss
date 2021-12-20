@@ -1,0 +1,35 @@
+@import "../../partials/variables";
+
+header{
+    display: flex;
+    align-items: center;
+    background: $primary-color;
+    color: $color-white;
+    padding:0.5em;
+    gap: $one-em-padding-margin;
+  h1{
+      font-size: $h1-font;
+      margin:0;
+  }
+  img{
+      height: 50px;
+  }
+}
+
+.searchContainer{
+    margin-left: auto;
+    input{
+        padding: 0.6em;
+        border-radius: 0.2em;
+        border: 1px solid $dark-grey;
+        margin-right: 1em;
+    }
+    button{
+        padding: 0.6em 2em;
+        background-color: transparent;
+        border: 1px solid $color-white;
+        border-radius: 0.2em;
+        color: $color-white;
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,91 @@
+.weatherCard {
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 16px #ccc;
+          box-shadow: 1px 1px 16px #ccc;
+}
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #d4d4d4;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1em;
+}
+
+.heading .title {
+  text-transform: uppercase;
+}
+
+.heading span {
+  margin-left: auto;
+  font-weight: 500;
+  color: #646464;
+}
+
+.cardContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.iconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 380px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.iconContainer .temp {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.summary {
+  width: 380px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 0.8rem;
+}
+
+.summary ul {
+  list-style-type: none;
+}
+
+.summary ul li {
+  padding: 10px;
+  border-bottom: 1px solid #d4d4d4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.1rem;
+}
+
+.summary ul li span {
+  margin-left: auto;
+}
+
+.condition {
+  margin: 0;
+  padding: 0px 3em;
+  position: absolute;
+  bottom: 20px;
+  left: -15px;
+  font-weight: 500;
+}
+/*# sourceMappingURL=WeatherCard.css.map */
