@@ -7,13 +7,14 @@ import './App.css';
 function App() {
 
   const [searchValue, setSearchValue] = useState("")
-  const handleSearch = (value) => {
+  const handleSearch = (e, value) => {
+    e.preventDefault();
     setSearchValue(value)
   }
   return (
     <div className="app">
       <div>
-        <Header handleSearch = {(value) => handleSearch(value)}/>
+        <Header handleSearch = {(e, value) => handleSearch(e, value)}/>
       </div>
       <div>
         <Weather  searchValue= {searchValue} />

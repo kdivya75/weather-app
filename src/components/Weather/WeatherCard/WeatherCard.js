@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import "./WeatherCard.css"
 
 
@@ -11,10 +12,8 @@ function WeatherCard(props) {
                 <span>{data.city}, {data.country}</span>
           
             </div>
-          
             <div className="cardContent">
                 <div className="iconContainer">
-                 
                     <img src={iconUrl} alt="icon"/>
                     <span className="temp">
                        {data.mainValue}
@@ -25,13 +24,24 @@ function WeatherCard(props) {
                 <ul>
                     {data.summary.map((each, index) =>  <li key={index}>{each.label}<span>{each.value}</span></li>)}
                 </ul>
-
-                   
                 </div>
             </div>
-        
         </div>
     )
 }
+WeatherCard.propTypes = {
+    data: PropTypes.shape({
+        type : PropTypes.string.isRequired,
+        icon: PropTypes.string.isRequired,
+        city: PropTypes.string.isRequired,
+        country: PropTypes.string.isRequired,
+        conditions: PropTypes.string,
+        summary: PropTypes.arrayOf(
+            PropTypes.shape({
+                label: PropTypes.string,  
+            })
+        )
 
+    })
+};
 export default WeatherCard;
